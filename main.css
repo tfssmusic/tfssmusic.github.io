@@ -57,11 +57,15 @@
 	font-style: normal;
 	color: #FFFFFF;
 }
-
-.footerstyle:hover .footertext {
+/*.footerstyle:hover .footertext {
 	color: #999;
-}	
-.footerstyle .footertext:hover {
+}*/	
+
+footer:has(.footertext:hover) .footertext {
+	color: #999;
+}
+
+footer.footerstyle:has(.footertext:hover) .footertext:hover {
 	color: #fff;
 }
 
