@@ -1,8 +1,9 @@
-.mobilenav{
-	display: block;
-}
+@media only screen and (max-width: 840px) {
+	.defaultnav{
+		display: none;
+	}
 
-.nav{
-	display: none;
-}
+	.mobilenav{
+		display: block;
+	}
 
