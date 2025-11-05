@@ -1,6 +1,12 @@
 :root {
 }
 
+.preventselect {
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
 .defaultnav {
 
 }
@@ -15,14 +21,33 @@
 	background-color:#000;
 }
 
+.defaultnav footer {
+	position:fixed;
+	display:inline-block;
+	width:100%;
+	text-align:center;
+	background-color:#000;
+	height:2rem;
+	bottom:0;
+	left:0;
+}
+
 .defaultnav nav {
 	position:fixed;
+	font-size:0;
 	width:100%;
 	text-align:center;
 	background-color: #000;
 	left:0;
-	bottom:0;
+	bottom:0.75rem;
 	height:4.55rem;
+}
+
+.defaultnav p {
+	font-family:"IBM Plex Mono",monospace;
+	font-style: italic;
+	font-size:9px;
+	color:#999;
 }
 
 .defaultnav .headimg {
@@ -35,7 +60,7 @@
 
 .defaultnav .nava {
 	display:inline-block;
-	margin:1.5% 3.5%;
+	margin:1.0% 3.5%;
 	opacity:0;
 	animation:slideIn-bottom 2.5s forwards, fadeIn 4.5s forwards;
 	
@@ -65,12 +90,12 @@
 	font-family: "Cormorant Infant", serif;
 	font-weight: 300;
 	font-style: italic;
-	margin-top:2%;
+	transform:translateY(-500);
 	color:#FFF;
 }
 
 .mobilenav .headimg {
-	position:flex;
+	display:inline-block;
 	left:0px;
 	margin-left:4%;
 	margin-top:2%;
@@ -78,7 +103,7 @@
 
 
 .grad {
-	height: 50px;
+	height: 2.5rem;
 	width: 100%;
 	background-color: transparent;
 	position:fixed;
