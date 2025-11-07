@@ -115,6 +115,15 @@
 	transform: rotate(180deg);
 }
 
+.content {
+	position:fixed;
+	display:flex;
+	justify-content:center;
+	top:50%;
+	right:50%;
+
+}
+
 
 a {
 	text-decoration:none;
@@ -126,7 +135,7 @@ body {
 
 
 @keyframes fadeIn {
-	0% {opacity:0.3;}
+	0% {opacity:0.0;}
 	100% {opacity:1;}
 }
 
