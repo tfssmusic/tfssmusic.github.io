@@ -119,11 +119,16 @@
 	position:fixed;
 	display:flex;
 	justify-content:center;
-	top:50%;
-	right:50%;
+	align-items:center;
+	flex-direction:column;
+	height:100%;
+	left:50%;
+	z-index:-1;
 
+/*
+	transform:translate(calc(-50%));
+*/
 }
-
 
 a {
 	text-decoration:none;
@@ -131,6 +136,8 @@ a {
 
 body {
 	background-color:#3d469c;
+	overflow-x:hidden;
+	height:200vh;
 }
 
 
