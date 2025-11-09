@@ -132,7 +132,10 @@
 
 .hiddencontent {
 	height: 100vh;
-	top:0;
+	top:-1.7vh;
+	position:relative;
+	color:transparent;
+	z-index:-2;
 }
 
 a {
