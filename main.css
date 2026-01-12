@@ -137,7 +137,6 @@
 
 .hiddencontent {
 	height: 100vh;
-	top:-1.6vh;
 	opacity:0;
 	position:relative;
 	color:transparent;
