@@ -30,9 +30,7 @@
 				<a href="#Archives" class="nava">ARCHIVES</a>
 				<a href="#Contact" class="nava">CONTACT</a>
 			</nav>
-			<footer>
-				<p style="opacity:0;animation: fadeIn 2s forwards;animation-delay:2s">Design by <a style="color:#999;text-decoration:underline;" href="https://github.com/jasonxwxia/">Jason Xia</a>. (c) 2025 Turner Fenton Music Council</p>
-			</footer>
+			<p class="credit" style="opacity:0;animation: fadeIn 2s forwards;animation-delay:3s;">Design by <a style="color:#999;text-decoration:underline;" href="https://github.com/jasonxwxia/">Jason Xia</a>. (c) 2025 Turner Fenton Music Council</p>
 		</div>
 		<div class="mobilenav">
 			<header>
@@ -43,12 +41,21 @@
 			</header>
 		</div>
 		<div class="content bg preventselect" style="left:0;justify-content:end;bottom:4.55rem;">
-			<img src="assets/sbg2.png" style="max-width:100%;">
-			<img src="assets/floor.png" style="max-width:100%;">
+			<div class="imgwrap" style="transform:translateY(8px);">
+
+			
+				<img src="assets/sbg2.png" style="max-width:100%;">
+				<div class="mask"></div>
+			</div>
+			<div class="imgwrap">
+				<img src="assets/floor.png" style="max-width:100%;">
+				<div class="mask2"></div>
+			</div>
 		</div>
-		<div class="contentparent">
+		<div>
 			<div class="content scrollcontent" style="color:white;transform:translateX(calc(-50%))">
-				About Us
+				<div class="contentbg" style="background: #E8E1D9; transform: rotate(7deg) translateX(-5vw);"></div>
+				<div class="contentbg"></div>
 			</div>
 			<div class="content scrollcontent" style="color:white;transform:translateX(calc(-50% + 100vw))">
 				Links
@@ -67,13 +74,14 @@
 			</div>
 			<footer></footer>
 
-			<p style="top:-2vh" class="hiddencontent" id="About-Us">a</p>
-			<p style="top:-4vh" class="hiddencontent" id="Links">b</p>
-			<p style="top:-6vh" class="hiddencontent" id="Upcoming">c</p>
-			<p style="top:-8vh" class="hiddencontent" id="FAQ">d</p>
-			<p style="top:-10vh" class="hiddencontent" id="Archives">e</p>
-			<p style="top:-12vh" class="hiddencontent" id="Contact">f</p>
+			<p class="hiddencontent" id="About-Us">a</p>
+			<p class="hiddencontent" id="Links">b</p>
+			<p class="hiddencontent" id="Upcoming">c</p>
+			<p class="hiddencontent" id="FAQ">d</p>
+			<p class="hiddencontent" id="Archives">e</p>
+			<p class="hiddencontent" id="Contact">f</p>
 		</div>
 		<script src="scrollscript.js"></script>
+		<script src="spotlight.js"></script>
 	</body>
 </html>	

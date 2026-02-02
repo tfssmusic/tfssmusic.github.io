@@ -21,17 +21,6 @@
 	background-color:#000;
 }
 
-.defaultnav footer {
-	position:fixed;
-	display:inline-block;
-	width:100%;
-	text-align:center;
-	background-color:#000;
-	height:2rem;
-	bottom:0;
-	left:0;
-}
-
 .defaultnav nav {
 	position:fixed;
 	font-size:0;
@@ -41,6 +30,7 @@
 	left:0;
 	bottom:0.75rem;
 	height:4.55rem;
+	z-index:2;
 }
 
 .defaultnav p {
@@ -115,14 +105,6 @@
 	transform: rotate(180deg);
 }
 
-.contentparent {
-	overflow-x:hidden;
-	height:100vh;
-	scroll-snap-type: y mandatory;
-	scroll-behavior: smooth;
-	scroll-snap-align: center;
-}
-
 .content {
 	position:fixed;
 	display:flex;
@@ -132,21 +114,94 @@
 	height:100%;
 	left:50%;
 	z-index:-1;
-
 }
+
+.content .imgwrap {
+	position: relative;
+	display:inline-block;
+	max-width:100%;
+}
+
+.content .imgwrap img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+
+.content .contentbg {
+	width: 50vw;
+	height: 50vh;
+	background: #F5EEE7;
+	position:absolute;
+	transform:translateX(-5vw);
+}
+
+.mask {
+	position: absolute;
+	inset: 0;
+	background: rgba(0,0,0,0.85);
+	
+	--x: 50%;
+	--y: 50%;
+
+	mask-image:radial-gradient(
+		circle 300px at var(--x) var(--y),
+		transparent 0%,
+		transparent 95%,
+		black 100%
+	);
+	-webkit-mask-image:radial-gradient(
+		circle 300px at var(--x) var(--y),
+		transparent 0%,
+		transparent 95%,
+		black 100%
+	);
+}
+
+.mask2 {
+	position: absolute;
+	inset: 0;
+	background: rgba(0,0,0,0.85);
+
+	--x: 50%;
+	--y: 50%;
+	
+	mask-image:radial-gradient(
+		ellipse 280px 120px at var(--x) var(--y),
+		transparent 0%,
+		transparent 95%,
+		black 100%
+	);
+	-webkit-mask-image:radial-gradient(
+		ellipse 280px 120px at var(--x) var(--y),
+		transparent 0%,
+		transparent 95%,
+		black 100%
+	);
+}
+
 
 .hiddencontent {
 	height: 100vh;
 	opacity:0;
 	position:relative;
-	color:transparent;
-	z-index:-2;
-	scroll-snap-type: y mandatory;
-	scroll-snap-align: center;
+	color:white;
+	z-index:-1;
+	margin:0;
+	scroll-snap-align: start;
 }
 
-.floor {
-	position:absolute:
+.credit {
+	position:fixed;
+	display:inline-block;
+	width:100%;
+	text-align:center;
+	background-color:#000;
+	height:2rem;
+	bottom:-2vh;
+	left:0;
+	margin:0;
 }
 
 a {
@@ -154,15 +209,19 @@ a {
 }
 
 html {
+	scroll-snap-type: y mandatory;
 	scroll-behavior: smooth;
 }
 
 body {
-	/*background-color:#3d469c;*/
 	background-color:#000;
 	margin:0;
-	overflow:hidden;	
+	max-height:500vh;
+	overflow-y:scroll;	
+	overflow-x:hidden;
 	height:600vh;
+	scroll-snap-type: y mandatory;
+	scroll-behavior: smooth;
 }
 
 
