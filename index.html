@@ -15,22 +15,37 @@
 	</head>
 	<body>
 		<div class="defaultnav">
-			<header>
-				<a href="https://tfssmusic.github.io/">
-					<img width=80 src="assets/tfssmusiclogo.png" alt="logoicon" class="headimg preventselect">
-				</a>
-				<div class="grad"></div>
-			</header>
-			<nav>
-				<div class="grad flip" style="bottom:5.25rem"></div>
-				<a href="#About-Us" class="nava">ABOUT US</a>
-				<a href="#Links" class="nava">LINKS</a>
-				<a href="#Upcoming" class="nava">UPCOMING</a>
-				<a href="#FAQ" class="nava">FAQ</a>
-				<a href="#Archives" class="nava">ARCHIVES</a>
-				<a href="#Contact" class="nava">CONTACT</a>
-			</nav>
-			<p class="credit" style="opacity:0;animation: fadeIn 2s forwards;animation-delay:3s;">Design by <a style="color:#999;text-decoration:underline;" href="https://github.com/jasonxwxia/">Jason Xia</a>. (c) 2025 Turner Fenton Music Council</p>
+			<div class="inactive" id="displaypostload">
+				<header>
+					<a href="https://tfssmusic.github.io/">
+						<img width=60vw src="assets/tfssmusiclogo.png" alt="logoicon" class="headimg preventselect">
+					</a>
+					<div class="grad"></div>
+				</header>
+				<nav>
+					<div class="grad flip" style="bottom:5.25rem"></div>
+					<a href="#About-Us" class="nava">ABOUT US</a>
+					<a href="#Links" class="nava">LINKS</a>
+					<a href="#Upcoming" class="nava">UPCOMING</a>
+					<a href="#FAQ" class="nava">FAQ</a>
+					<a href="#Archives" class="nava">ARCHIVES</a>
+					<a href="#Contact" class="nava">CONTACT</a>
+				</nav>
+				<p class="credit" style="opacity:0;animation: fadeIn 2s forwards;animation-delay:3s;">Design by <a style="color:#999;text-decoration:underline;" href="https://github.com/jasonxwxia/">Jason Xia</a>. (c) 2025 Turner Fenton Music Council</p>
+			</div>
+			<div class="active" id="displaypreload">
+				<header>
+					<span style="opacity:0">
+						<img width=60vw src="assets/tfssmusiclogo.png" class="headimg preventselect">	
+					</span>
+					<div class="grad"></div>
+				</header>
+				<nav>
+					<div class="grad flip" style="bottom:5.25rem"></div>
+					<p class="nava"></p>
+				</nav>
+				<p class="credit" style="opacity:0"></p>
+			</div>
 		</div>
 		<div class="mobilenav">
 			<header>
@@ -83,5 +98,6 @@
 		</div>
 		<script src="scrollscript.js"></script>
 		<script src="spotlight.js"></script>
+		<script src="delayload.js"></script>
 	</body>
 </html>	

@@ -7,6 +7,14 @@
 	user-select: none;
 }
 
+.active {
+	display:block;
+}
+
+.inactive {
+	display:none;
+}
+
 .defaultnav {
 
 }
@@ -46,7 +54,6 @@
 	margin-top:1%;
 	max-width:100%;
 	animation: slideIn 1.7s forwards, fadeIn 4.5s forwards;
-}
 
 .defaultnav .nava {
 	display:inline-block;
@@ -56,7 +63,7 @@
 	
 	font-family:"Barlow Condensed", sans-serif;
 	font-weight:400;
-	font-size:1.55rem;
+	font-size:4.436vh;
 	font-style: normal;
 	color:#FFF;	
 }
