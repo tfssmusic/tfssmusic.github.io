@@ -54,6 +54,7 @@
 	margin-top:1%;
 	max-width:100%;
 	animation: slideIn 1.7s forwards, fadeIn 4.5s forwards;
+}
 
 .defaultnav .nava {
 	display:inline-block;
