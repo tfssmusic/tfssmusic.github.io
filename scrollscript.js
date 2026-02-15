@@ -40,16 +40,22 @@ for (let i=0; i<snapobj.length; i++) {
 
 }
 
+const cond = document.getElementById("maincontent");
+
+
 document.addEventListener("scroll", () => {
-	let scrollableHeight = document.documentElement.scrollHeight - window.innerHeight;
-	let scrollY = (window.scrollY/scrollableHeight)*500;
-
-	console.log(scrollY, scrollableHeight, window.scrollY, window.innerHeight, document.documentElement.scrollHeight);
-
-	for (let i=0; i<content.length; i++) {
-		content[i].style.transform = `translate(calc(-50% - ${scrollY}vw + ${i}*100vw))`;
-	}
-	for (let i=0; i<bg.length; i++) {
-		bg[i].style.transform = `translate(calc(-50% + ${scrollY}vw + ${i}*100vw))`;
+	content[0].removeAttribute("id");
+	if (cond && cond.classList.contains("active1")){
+		let scrollableHeight = document.documentElement.scrollHeight - window.innerHeight;
+		let scrollY = (window.scrollY/scrollableHeight)*500;
+	
+		console.log(scrollY, scrollableHeight, window.scrollY, window.innerHeight, document.documentElement.scrollHeight);
+	
+		for (let i=0; i<content.length; i++) {
+			content[i].style.transform = `translate(calc(-50% - ${scrollY}vw + ${i}*100vw))`;
+		}
+		for (let i=0; i<bg.length; i++) {
+			bg[i].style.transform = `translate(calc(-50% + ${scrollY}vw + ${i}*100vw))`;
+		}
 	}
 });

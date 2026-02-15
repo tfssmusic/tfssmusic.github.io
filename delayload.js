@@ -1,3 +1,6 @@
+
+
+
 setTimeout(function() {
 	const l1 = document.getElementsByClassName("displaypostload");
 	for (const el of l1){
@@ -10,6 +13,11 @@ setTimeout(function() {
 		el.classList.remove("active");
 		el.classList.add("inactive");
 	}
+
+	const mc = document.getElementById("maincontent");
+	mc.classList.remove("inactive1");
+	mc.classList.add("active1");
+			
 
 
 	//document.body.style.overflowY="scroll";

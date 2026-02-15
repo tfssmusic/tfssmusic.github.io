@@ -79,24 +79,28 @@
 			</div>
 		</div>
 		<div>
-			<div class="content scrollcontent" style="color:white;transform:translateX(calc(-50%))">
-				<div class="contentbg" style="background: #E8E1D9; transform: rotate(7deg) translateX(-5vw);"></div>
-				<div class="contentbg"></div>
-			</div>
-			<div class="content scrollcontent" style="color:white;transform:translateX(calc(-50% + 100vw))">
-				Links
-			</div>
-			<div class="content scrollcontent" style="color:white;transform:translateX(calc(-50% + 100vw))">
-				Upcoming
-			</div>
-			<div class="content scrollcontent" style="color:white;transform:translateX(calc(-50% + 100vw))">
-				FAQ	
-			</div>
-			<div class="content scrollcontent" style="color:white;transform:translateX(calc(-50% + 100vw))">
-				Archives
-			</div>
-			<div class="content scrollcontent" style="color:white;transform:translateX(calc(-50% + 100vw))">
-				Contact
+			<div id="maincontent" class="inactive1"> 
+				<div class="inactive displaypostload">
+					<div class="content scrollcontent" id="visible" style="color:white">
+						<div class="contentbg" style="background: #E8E1D9; transform: rotate(7deg) translateX(-5vw);"></div>
+						<div class="contentbg"></div>
+					</div>
+				</div>
+				<div class="content scrollcontent" style="color:white;transform:translateX(calc(-50% + 100vw))">
+					Links
+				</div>
+				<div class="content scrollcontent" style="color:white;transform:translateX(calc(-50% + 100vw))">
+					Upcoming
+				</div>
+				<div class="content scrollcontent" style="color:white;transform:translateX(calc(-50% + 100vw))">
+					FAQ	
+				</div>
+				<div class="content scrollcontent" style="color:white;transform:translateX(calc(-50% + 100vw))">
+					Archives
+				</div>
+				<div class="content scrollcontent" style="color:white;transform:translateX(calc(-50% + 100vw))">
+					Contact
+				</div>
 			</div>
 			<footer></footer>
 
@@ -110,5 +114,9 @@
 		<script src="scrollscript.js"></script>
 		<script src="spotlight.js"></script>
 		<script src="delayload.js"></script>
+
+		<script>
+		history.scrollRestoration = "manual";
+		</script>
 	</body>
 </html>	
