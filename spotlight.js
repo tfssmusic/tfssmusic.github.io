@@ -1,6 +1,6 @@
 const layers = [
-	{ el: document.querySelector(".mask"), ease: 0.04, x: window.innerWidth/2, y: window.innerWidth/2 },
-	{ el: document.querySelector(".mask2"), ease: 0.04, x: window.innerWidth/2, y: window.innerWidth/2 }
+	{ el: document.querySelector(".mask"), ease: 0.04, x: window.innerWidth/2, y: window.innerHeight/2 },
+	{ el: document.querySelector(".mask2"), ease: 0.04, x: window.innerWidth/2, y: window.innerHeight/2 }
 ];
 
 let targetX = innerWidth / 2;

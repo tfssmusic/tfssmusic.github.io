@@ -15,7 +15,7 @@
 	</head>
 	<body>
 		<div class="defaultnav">
-			<div class="inactive" id="displaypostload">
+			<div class="inactive displaypostload">
 				<header>
 					<a href="https://tfssmusic.github.io/">
 						<img width=60vw src="assets/tfssmusiclogo.png" alt="logoicon" class="headimg preventselect">
@@ -33,7 +33,7 @@
 				</nav>
 				<p class="credit" style="opacity:0;animation: fadeIn 2s forwards;animation-delay:3s;">Design by <a style="color:#999;text-decoration:underline;" href="https://github.com/jasonxwxia/">Jason Xia</a>. (c) 2025 Turner Fenton Music Council</p>
 			</div>
-			<div class="active" id="displaypreload">
+			<div class="active displaypreload">
 				<header>
 					<span style="opacity:0">
 						<img width=60vw src="assets/tfssmusiclogo.png" class="headimg preventselect">	
@@ -55,16 +55,27 @@
 				<div class="grad"></div>
 			</header>
 		</div>
-		<div class="content bg preventselect" style="left:0;justify-content:end;bottom:4.55rem;">
-			<div class="imgwrap" style="transform:translateY(8px);">
-
-			
-				<img src="assets/sbg2.png" style="max-width:100%;">
-				<div class="mask"></div>
+		<div class="displaypostload inactive">
+			<div class="content bg preventselect" style="left:0;justify-content:end;bottom:4.55rem;">
+				<div class="imgwrap" style="transform:translateY(8px);">
+					<img src="assets/sbg2.png" style="max-width:100%;">
+					<div class="mask"></div>
+				</div>
+				<div class="imgwrap">
+					<img src="assets/floor.png" style="max-width:100%;">
+					<div class="mask2"></div>
+				</div>
 			</div>
-			<div class="imgwrap">
-				<img src="assets/floor.png" style="max-width:100%;">
-				<div class="mask2"></div>
+		</div>
+		<div class="displaypreload active">
+			<div class="content bg preventselect" style="left:0;justify-content:end;bottom:4.55rem;">
+				<div style="z-index:2;width:100vw;height:100vh;background-color:rgba(0,0,0,0.50);position:absolute;top:0;left:0;"></div>
+				<div class="imgwrap" style="transform:translateY(8px);">
+					<img src="assets/sbg2.png" style="max-width:100%;">
+				</div>
+				<div class="imgwrap">
+					<img src="assets/floor.png" style="max-width:100%;">
+				</div>
 			</div>
 		</div>
 		<div>
