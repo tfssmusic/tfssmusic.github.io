@@ -145,6 +145,10 @@
 	transform:translateX(-5vw);
 }
 
+.dropshadow {
+	box-shadow: 0 5px 20px 0 rgba(0,0,0,0.4);
+}
+
 #visible {
   animation: firstslide 3.0s forwards;
 }
