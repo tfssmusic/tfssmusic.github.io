@@ -8,6 +8,7 @@
 		<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@1,300..700&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Onest" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Open+Sans" rel="stylesheet">
 		
 		<link href="main.css" rel="stylesheet">
@@ -64,9 +65,7 @@
 				</div>
 				<div class="imgwrap">
 					<img src="assets/floor.png" style="max-width:100%;">
-					<div class="mask2"></div>
-				</div>
-			</div>
+					<div class="mask2"></div> </div> </div>
 		</div>
 		<div class="displaypreload active">
 			<div class="content bg preventselect" style="left:0;justify-content:end;bottom:4.55rem;">
@@ -83,24 +82,57 @@
 			<div id="maincontent" class="inactive1"> 
 				<div class="displaypostload inactive">
 					<div class="content scrollcontent" id="visible" style="color:white">
-						<div class="contentbg dropshadow" style="background: #E8E1D9; transform: rotate(7deg) translateX(-5vw);"></div>
+						<div class="contentbg dropshadow" id="back" style="background: #E8E1D9; transform: rotate(7deg) translateX(-5vw);z-index-4;"></div>
 						<div class="contentbg dropshadow">
-							<h1 style="position:relative;left:3vw;">About Us</h1>
-							<p style="position:relative;left:3vw;margin-right:15vw;top:-3vh;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-						</div>
-						<div class="dropshadow" style="background: #F2F2F2; position: absolute; width: 15vw; height: 15vw; left:15vw; top:18vh; transform: rotate(-7deg)">
-							<div class="photo-container">
-								<img src="./assets/TFSSMusic.png" width=100% height=100% style="object-fit: cover;">
+							<div id="generalau">
+								<h1 style="position:relative;left:3vw;">About Us</h1>
+								<p style="position:relative;left:3vw;margin-right:15vw;top:-5vh;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+								<div class="dropshadow" style="background: #F0F0F0; position: absolute; width: 25vw; height: 50vh; left: 10vw; bottom: 18vh;"> 
+									<div class="video-container">
+										<video height=100% width=100% style="object-fit:cover" autoplay muted loop>
+											<source src="./assets/stock.mp4" type="video/mp4" />
+											Your browser does not support the video tag.
+										</video>	
+									</div>
+								</div>
+							</div>
+							<div id="Jazzbandau">
+								<h1 style="position:relative;left:3vw;">About Jazz Band</h1>
+							</div>
+							<div id="Concertbandau">
+								<h1 style="position:relative;left:3vw;">About Concert Band</h1>
+							</div>
+							<div id="Musiccouncilaboutus">
+								<h1 style="position:relative;left:3vw;">About Music Council</h1>
+							</div>
+							<div class="buttons">
+									<li><a>JB</a></li>
+									<li><a>CB</a></li>
+									<li><a>MC</a></li>
 							</div>
 						</div>
-						<div class="dropshadow" style="background: #F0F0F0; position: absolute; width: 15vw; height: 40vh; left: 20vw; bottom: 18vh;"> 
-							<div class="video-container">
-								<video height=100% width=100% style="object-fit:cover" autoplay muted loop>
-									<source src="./assets/stock.mp4" type="video/mp4" />
-									Your browser does not support the video tag.
-								</video>
+					
+							
+				<!--						
+				<div id="generalau">
+						<div class="content scrollcontent" id="visible" style="color:white">
+							<div class="contentbg dropshadow" style="background: #E8E1D9; transform: rotate(7deg) translateX(-5vw);"></div>
+							<div class="contentbg dropshadow">
+								<h1 style="position:relative;left:3vw;">About Us</h1>
+								<p style="position:relative;left:3vw;margin-right:15vw;top:-5vh;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+								<div class="buttons">
+										<li><a>JB</a></li>
+										<li><a>CB</a></li>
+										<li><a>MC</a></li>
+								</div>
 							</div>
-						</div>
+							< !--
+							<div class="dropshadow" style="background: #F2F2F2; position: absolute; width: 15vw; height: 15vw; left:15vw; top:18vh; transform: rotate(-7deg)">
+								<div class="photo-container">
+									<img src="./assets/TFSSMusic.png" width=100% height=100% style="object-fit: cover;">
+								</div>
+							</div>
+							-->
 					</div>
 				</div>
 				<div class="content scrollcontent" style="color:white;transform:translateX(calc(-50% + 100vw))">
