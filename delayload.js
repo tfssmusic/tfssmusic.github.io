@@ -29,5 +29,5 @@ setTimeout(function() {
 //	const l2 = document.getElementById("displaypreload");
 //	l2.classList.remove("active");
 //	l2.classList.add("inactive");
-}, 1000);
+}, 200);
 
