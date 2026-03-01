@@ -110,6 +110,10 @@
 	box-shadow: 0 5px 20px 0 rgba(0,0,0,0.4);
 }
 
+.dropshadowposter {
+	box-shadow: 3px 5px 7px 0 rgba(0,0,0,0.6);
+}
+
 .grad {
 	height: 2.5rem;
 	width: 100%;
@@ -200,6 +204,19 @@
 	color: #999;
 }
 
+.post {
+
+}
+
+.post img{
+	transition:transform 0.2s;
+}
+
+.postblock {
+	position:absolute;
+	width:100%;
+	height:100%;
+}
 
 .video-container {
 	width:90%;
@@ -355,6 +372,23 @@ nav:has(.nava:hover) .nava{
 nav:has(.nava:hover) .nava:hover {
 	color: #FFF;
 }
+
+.post:has(.postblock:hover) img{
+	transform:scale(1.2);
+}
+
+#posts .postblock:hover {
+	opacity:0;
+}
+
+#posts:has(.postblock:hover) #boardblock{
+	background-color:rgba(0,0,0,0.3);
+}
+
+#posts:has(.postblock:hover) .postblock{
+	background-color:rgba(0,0,0,0.3);
+}
+
 
 .nava:nth-child(2) {animation-delay:0.1s;}
 .nava:nth-child(3) {animation-delay:0.2s;}
