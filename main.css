@@ -23,7 +23,8 @@
 }
 
 .defaultnav {
-
+	position:absolute;
+	z-index:6;
 }
 
 .defaultnav header {
