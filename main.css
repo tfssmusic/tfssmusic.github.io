@@ -171,7 +171,7 @@
 
 .buttons {
 	list-style:none;
-	position:relative;
+	position:absolute;
 	left:3vw;
 	bottom:3vh;
 }
@@ -181,7 +181,7 @@
 	display:inline-block;
 }
 
-.buttons a {
+.buttons span {
 	display: block;
 	background-color: #f0e7df;
 	background-image: -webkit-gradient(linear, left top, left bottom, from(#f0e7df), to(#e6dbd1));
@@ -193,6 +193,13 @@
 	line-height: 3vw;
 	border-radius: 50%;
 }
+
+.buttons .clicked {
+	text-decoration: none;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#bab0a8), to(#cfc4ba));
+	color: #999;
+}
+
 
 .video-container {
 	width:90%;
@@ -329,10 +336,16 @@ body {
 }
 
 
-.buttons a:hover{
+.buttons:not(:has(.clicked:hover)) span:hover{
 	text-decoration: none;
 	color: #555;
-	background: #f5f5f5;
+	background: #f0e7df;
+}
+
+.buttons:has(.clicked:hover) span:hover{
+	text-decoration: none;
+	color: #555;
+	background: #ada49c;
 }
 
 nav:has(.nava:hover) .nava{
