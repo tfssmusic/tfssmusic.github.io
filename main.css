@@ -205,6 +205,24 @@
 	color: #999;
 }
 
+.link {
+	left:2vw;
+	position:relative;
+	margin-top:3.5vh;
+}
+
+
+.link a {
+	text-decoration: none;
+	position: absolute;
+	font-family: "Berlinerins", sans-serif;
+	font-size:1.7rem;
+	font-weight:300;
+	color:#7a7471;
+	left:7vw;
+	filter:drop-shadow(0 0 5px rgba(0,0,0,0.2));
+}
+
 .post {
 
 }
@@ -372,6 +390,10 @@ nav:has(.nava:hover) .nava{
 
 nav:has(.nava:hover) .nava:hover {
 	color: #FFF;
+}
+
+.link a:hover {
+	color:#696461;
 }
 
 .post:has(.postblock:hover) img{
