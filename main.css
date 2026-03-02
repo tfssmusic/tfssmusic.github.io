@@ -154,7 +154,7 @@
 
 .content .contentbg {
 	width: 50vw;
-	height: 50vh;
+	height: 52vh;
 	background: #F5EEE7;
 	position:absolute;
 	transform:translateX(-5vw);
@@ -216,7 +216,7 @@
 	text-decoration: none;
 	position: absolute;
 	font-family: "Berlinerins", sans-serif;
-	font-size:1.7rem;
+	font-size:1.417vw;
 	font-weight:300;
 	color:#7a7471;
 	left:7vw;
