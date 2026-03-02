@@ -6,4 +6,15 @@
 	.mobilenav{
 		display: block;
 	}
+	
+	html{
+		overflow:hidden;
+	}
+}
 
+.center {
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	flex-direction:column;
+}
