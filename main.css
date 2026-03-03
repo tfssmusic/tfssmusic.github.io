@@ -76,6 +76,13 @@
 	font-style: normal;
 	color:#FFF;	
 }
+.curtains {
+	position:absolute;
+	width:15vw;
+	min-height:90vh;
+	top: 0vh;
+}
+
 
 
 .mobilenav {
@@ -159,7 +166,6 @@
 	height: auto;
 }
 
-
 .content .contentbg {
 	width: 50vw;
 	height: 52vh;
@@ -195,7 +201,6 @@
 }
 
 .buttons span {
-	display: block;
 	background-color: #f0e7df;
 	background-image: -webkit-gradient(linear, left top, left bottom, from(#f0e7df), to(#e6dbd1));
 	position: relative;
@@ -205,6 +210,9 @@
 	height: 3vw;
 	line-height: 3vw;
 	border-radius: 50%;
+	display:flex;
+	align-items:center;
+	justify-content:center;
 }
 
 .buttons .clicked {
@@ -229,6 +237,28 @@
 	color:#7a7471;
 	left:7vw;
 	filter:drop-shadow(0 0 5px rgba(0,0,0,0.2));
+}
+
+.igembed {
+	position:absolute;
+	border-radius:5px;
+	border-style:solid;
+	border-color:#545454;
+	border-width:1px;
+	width:30vw;
+	height:65vh;
+	background-color:#212121;
+	display:flex;
+	flex-direction:column;
+}
+
+.igembed p{
+	font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+	color:#FFF;
+}
+
+.iglogo{
+	opacity:0;
 }
 
 .post {
@@ -404,6 +434,10 @@ nav:has(.nava:hover) .nava:hover {
 	color:#696461;
 }
 
+.iglogo:hover {
+	opacity:0.3;
+}
+
 .post:has(.postblock:hover) img{
 	transform:scale(1.2);
 }
@@ -419,6 +453,7 @@ nav:has(.nava:hover) .nava:hover {
 #posts:has(.postblock:hover) .postblock{
 	background-color:rgba(0,0,0,0.3);
 }
+
 
 
 .nava:nth-child(2) {animation-delay:0.1s;}
