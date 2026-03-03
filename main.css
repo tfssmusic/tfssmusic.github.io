@@ -4,8 +4,7 @@
 
 @font-face {
 	font-family: "Berlinerins";
-	src: url(".fonts/TTBerlinerins.otf") format("opentype");
-	src: local("TT Berlinerins Trial");
+	src: url("assets/TTBerlinerins.otf") format("opentype"), local("TT Berlinerins Trial");
 }
 
 .preventselect {
@@ -385,6 +384,13 @@ body {
 	height:600vh;
 	scroll-snap-type: y mandatory;
 	scroll-behavior: smooth;
+}
+
+.form {
+	border-radius:15px;
+	border: 2px solid #696461;
+	width:50vw;
+	height:50vh;
 }
 
 

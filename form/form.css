@@ -1,0 +1,79 @@
+:root {
+
+}
+
+html body {
+	overflow:hidden;
+}
+
+@font-face {
+        font-family: "Berlinerins";
+        src: url("../assets/TTBerlinerins.otf") format("opentype"), local("TT Berlinerins Trial");
+}
+
+.inptstyle {
+	background: linear-gradient(#d4bca9,#e6d9cf);
+	border-radius:5px;
+	border: 2px solid #b09986;
+	padding:2vh;
+	font-family:inherit;
+	font-size:inherit;
+	color:inherit;
+	resize:none;
+	line-height:1.2rem;
+}
+
+.slinput {
+	width:calc(50% - 5vw);
+}
+
+.rowone {
+	margin:2vw;
+	display:inline;
+}
+
+h1 {
+        font-family:"Berlinerins", sans-serif;
+        font-weight:30;
+        font-size:3.8rem;
+        color:#696461;
+	margin:2vw;
+	margin-bottom:0;
+}
+
+p {
+	color:#696461;
+	font-family:"Onest", sans-serif;
+	font-size:1.2rem;
+	font-weight:500;
+	margin-top:0;
+	margin-left:2vw;
+	margin-bottom:2vh;
+}
+
+form {
+	color:#696461;
+	font-family:"Onest", sans-serif;
+	font-size:1rem;
+	display:flex;
+	flex-direction:column;
+}
+
+textarea {
+	margin:2vw;
+	margin-top:0;
+	height:calc(1.2rem * 6);
+	width:calc(100% - 8vw);
+}
+
+button {
+	background-color:#696461;
+	padding:2vh;
+	width:15vw;
+	color:#FFF;
+	margin-left:2vw;
+	border:none;
+	border-radius:2px;
+	font-family:inherit;
+	font-weight:500;
+}
