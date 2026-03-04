@@ -48,26 +48,31 @@ document.addEventListener("DOMContentLoaded", () => {
 		console.log("point11111");
 		window.scrollY = window.innerHeight;
 		content[1].style.transform = `translate(calc(-50%))`;
+		content[1].scrollIntoView();
 		content[0].removeAttribute("id");
 		content[0].style.transform = `translate(calc(-50% - 100vw))`;
 	}
 	if (hash === "#Upcoming") {
 		content[2].style.transform = `translate(calc(-50%))`;
+		content[2].scrollIntoView();
 		content[0].removeAttribute("id");
 		content[0].style.transform = `translate(calc(-50% - 100vw))`;
 	}
 	if (hash === "#FAQ") {
 		content[3].style.transform = `translate(calc(-50%))`;
+		content[3].scrollIntoView();
 		content[0].removeAttribute("id");
 		content[0].style.transform = `translate(calc(-50% - 100vw))`;
 	}
 	if (hash === "#Archives") {
 		content[4].style.transform = `translate(calc(-50%))`;
+		content[4].scrollIntoView();
 		content[0].removeAttribute("id");
 		content[0].style.transform = `translate(calc(-50% - 100vw))`;
 	}
 	if (hash === "#Contact") {
 		content[5].style.transform = `translate(calc(-50%))`;
+		content[5].scrollIntoView();
 		content[0].removeAttribute("id");
 		content[0].style.transform = `translate(calc(-50% - 100vw))`;
 	}
