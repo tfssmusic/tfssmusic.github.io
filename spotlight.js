@@ -1,10 +1,10 @@
 const layers = [
-	{ el: document.querySelector(".mask"), ease: 0.04, x: window.innerWidth/2, y: window.innerHeight/2+110 },
+	{ el: document.querySelector(".mask"), ease: 0.04, x: window.innerWidth/2, y: window.innerHeight/2+410 },
 	{ el: document.querySelector(".mask2"), ease: 0.04, x: window.innerWidth/2, y: window.innerHeight/2 }
 ];
 
 let targetX = innerWidth / 2;
-let targetY = innerHeight / 2+110;
+let targetY = innerHeight / 2+410;
 let targetY2 = innerHeight / 2;
 
 
@@ -12,7 +12,7 @@ const m1 = document.getElementsByClassName("imgwrap");
 
 window.addEventListener("mousemove", e => {
 	targetX = e.clientX;
-	targetY = e.clientY;
+	targetY = e.clientY+310;
 	targetY2 = e.clientY/1.25;
 });
 

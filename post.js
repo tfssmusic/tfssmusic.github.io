@@ -16,18 +16,18 @@ function hide(){
 
 event1.addEventListener("click", function(){
 	hide();
-	frame.src = "https://tfssmusic.github.io/Page";
-})
+	frame.src = "https://tfssmusic.github.io/events/1/";
+});
 
 event2.addEventListener("click", function(){
-	frame.src = "https://example.com";
 	hide();
-})
+	frame.src = "https://tfssmusic.github.io/events/2/";
+});
 
 event3.addEventListener("click", function(){
 	hide();
-	frame.src = "https://tfssmusic.github.io/events";
-})
+	frame.src = "https://tfssmusic.github.io/events/3/";
+});
 
 function restore(){
 	frame.style.display = "none";
