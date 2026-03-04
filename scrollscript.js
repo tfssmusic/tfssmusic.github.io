@@ -45,8 +45,6 @@ const cond = document.getElementById("maincontent");
 document.addEventListener("DOMContentLoaded", () => {
 	const hash = window.location.hash;
 	if (hash === "#Links") {
-		console.log("point11111");
-		window.scrollY = window.innerHeight;
 		content[1].style.transform = `translate(calc(-50%))`;
 		content[0].removeAttribute("id");
 		content[0].style.transform = `translate(calc(-50% - 100vw))`;
