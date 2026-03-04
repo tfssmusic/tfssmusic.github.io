@@ -17,6 +17,9 @@
 		<link href="smallscreen.css" rel="stylesheet">
 	</head>
 	<body>
+		<span onclick="restore()" id="xbtn" style="z-index:51;" class="preventselect">×</span>
+		<iframe src="https://tfssmusic.github.io/Page/" id="postframe" style="z-index:50;"></iframe>
+		<div id="blocker" style="z-index:49;"></div>
 		<div class="defaultnav">
 			<div style="height:100vh;top:0;position:fixed">
 				<img src="./assets/Curtain.png" class="curtains" style="left:-2vw;">
@@ -59,7 +62,7 @@
 			</div>
 		</div>
 		<div class="mobilenav">
-			<div class="center" style="animation:none;width:100%;height:100vh;background-color:black;position:absolute;z-index:500;">
+			<div class="center" style="animation:none;width:100%;height:100vh;background-color:black;position:fixed;z-index:500;">
 				<img src="./assets/tfssmusiclogo.png" class="center" style="width:35vw;position:relative;filter:drop-shadow(0 0 10vw rgba(255,255,255,1))">
 				<h2 class="center" style="opacity:0;max-width:80vw;font-family:'Onest';font-size:1.2rem;position:relative;text-align:center;">🚧 Mobile Site under construction! 🚧<br>Check Back Soon!</h2>
 
@@ -116,10 +119,16 @@
 							<div id="generalau">
 								<h1 style="position:relative;left:3vw;">About Us</h1>
 								<p style="position:relative;left:3vw;margin-right:15vw;top:-3vh;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.</p>
-								<p style="position:absolute;font-family:'Gochi Hand', cursive; left:5vw;bottom:8vh;transform:rotate(3deg);">Learn about our activities!</p>
-								<div style="position:absolute;height:1.6vh;width:3.5vw;left:12.5vw;bottom:6vh;transform:rotate(-58deg);">
+								<ul style="margin-left:3vw;margin-top:-3vh;">
+									<li><img src="./assets/JBIco.png" style="height:1rem;aspect-ratio:4/5">&emsp;Jazz Band</li>
+									<li><img src="./assets/CBIco.png" style="height:1rem;aspect-ratio:4/5">&emsp;Concert Band</li>
+									<li><img src="./assets/MCIco.png" style="height:1rem;aspect-ratio:2.6/5">&emsp;Music Counci</li>
+								</ul>
+									
+								<p style="font-size:1rem;position:absolute;font-family:'Gochi Hand', cursive; left:5vw;bottom:3vh;transform:rotate(3deg);">Learn about our activities!</p>
+								<div style="position:absolute;height:1.2vh;width:3.5vw;left:12.5vw;bottom:3vh;transform:rotate(-69deg);">
 									<svg xmlns="http://www.w3.org/2000/svg" viewBox="-133.563 -38.9573 131.4 36.3" width="100%" height="100%">  
-										<path d="M -124 -19 C -126.788 -21.8961 -135 -31 -133.345 -38.417 M -133.345 -38.417 C -133.595 -39.2416 -129 -39 -126.813 -38.5032 C -120.258 -37.2835 -113.982 -35.2793 -109 -29 M -133.345 -38.417 C -107.219 -4.9667 -65.1607 1.163 -41.4382 -4.5444 C -17.7157 -10.2518 -4.7055 -36.764 -2.1608 -38.337" stroke="#827d79" stroke-width="4" fill="none"/> 
+										<path d="M -124 -19 C -126.788 -21.8961 -135 -31 -133.345 -38.417 M -133.345 -38.417 C -133.595 -39.2416 -129 -39 -126.813 -38.5032 C -120.258 -37.2835 -113.982 -35.2793 -109 -29 M -133.345 -38.417 C -107.219 -4.9667 -65.1607 1.163 -41.4382 -4.5444 C -17.7157 -10.2518 -4.7055 -36.764 -2.1608 -38.337" stroke="#827d79" stroke-width="7" fill="none"/> 
 									</svg>
 								</div>
 								<div class="dropshadow" style="background: #F0F0F0; position: absolute; width: 20vw; height: 50vh; left: 40vw; bottom: -3vh;"> 
@@ -139,7 +148,7 @@
 							</div>
 							<div id="Musiccouncilaboutus" class="inactive">
 								<h1 style="position:relative;left:3vw;">About Music Council</h1>
-								<p style="position:relative;left:3vw;margin-right:15vw;top:-3vh;"><strong>Music Council</strong> is a leadership club that oversees all the music-related activities at Turner Fenton Secondary School!<br>We plan concerts, karaoke, and other events to promote music within the school.<br><br><strong>NO MUSICAL TALENT is required</strong>, as this is not a performing group. Anyone is free to join! Find general member applications <u><strong><a href="#Links" style="text-decoration:none;">here.</a></strong></u></p>
+								<p style="position:relative;left:3vw;margin-right:15vw;top:-3vh;"><strong>Music Council</strong> is a leadership club that oversees all the music-related activities at Turner Fenton Secondary School!<br>We plan concerts, karaoke, and other events to promote music within the school.<br><br><strong>NO MUSICAL TALENT is required</strong>, as this is not a performing group. Anyone is free to join! Find general member applications <u><strong><a href="#Links" style="text-decoration:none;color:#696461">here.</a></strong></u></p>
 
 								<div class="dropshadow" style="background: #F2F2F2; position: absolute; width: 15vw; height: 15vw; right:-5vw; top:2vh; transform: rotate(-7deg)">
 									<div class="photo-container">
@@ -241,25 +250,29 @@
 						</div>
 						<img src="./assets/betterbulletinboard.png" class="dropshadow" style="height:51vh">
 						<div id="boardblock" style="width:100%;height:51vh;position:absolute;transform:translateY(-51.7vh)"></div>
-						<div style="width:8vw;height:10vw;background-color:transparent;position:absolute;top:50vh;left:15%;transform:rotate(2deg)" class="post dropshadowposter" id="event1">
+						<div style="width:8vw;height:10vw;background-color:transparent;position:absolute;top:50vh;left:15%;transform:rotate(2deg)" class="post dropshadowposter">
 							<img src="./assets/Event1.png" width=100% style="position:absolute;">
-							<div class="postblock"></div>
+							<div class="postblock" id="event1"></div>
 						</div>
-						<div style="width:8vw;height:10vw;background-color:transparent;position:absolute;top:30vh;left:40%;transform:rotate(-5deg)" class="post dropshadowposter" id="event2">
+						<div style="width:8vw;height:10vw;background-color:transparent;position:absolute;top:30vh;left:40%;transform:rotate(-5deg)" class="post dropshadowposter">
 							<img src="./assets/Event2.png" width=100% style="position:absolute;">
-							<div class="postblock"></div>
+							<div class="postblock" id="event2"></div>
 						</div>
-						<div style="width:8vw;height:10vw;background-color:transparent;position:absolute;top:52vh;left:60%;transform:rotate(-2deg)" class="post dropshadowposter" id="event2">
+						<div style="width:8vw;height:10vw;background-color:transparent;position:absolute;top:52vh;left:60%;transform:rotate(-2deg)" class="post dropshadowposter">
 							<img src="./assets/Event3.png" width=100% style="position:absolute;">
-							<div class="postblock"></div>
+							<div class="postblock" id="event3"></div>
 						</div>
 					</div>
 				</div>
 				<div class="content scrollcontent" style="color:white;transform:translateX(calc(-50% + 100vw))">
-					FAQ	
+					<div class="contentbg dropshadow" style="display:flex;justify-content:center;align-items:center;transform:none;">
+					<p style="font-size:2rem">🚧 Coming Soon 🚧</p>
+					</div>
 				</div>
 				<div class="content scrollcontent" style="color:white;transform:translateX(calc(-50% + 100vw))">
-					Archives
+					<div class="contentbg dropshadow" style="display:flex;justify-content:center;align-items:center;transform:none;">
+					<p style="font-size:2rem">🚧 Coming Soon 🚧</p>
+					</div>
 				</div>
 				<div class="content scrollcontent" style="color:white;transform:translateX(calc(-50% + 100vw))">
 					<iframe src="form/form.html" class="form dropshadow"></iframe>
@@ -278,6 +291,7 @@
 		<script src="spotlight.js"></script>
 		<script src="delayload.js"></script>
 		<script src="aboutus.js"></script>
+		<script src="post.js"></script>
 
 		<script>
 		history.scrollRestoration = "manual";

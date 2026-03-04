@@ -180,10 +180,10 @@
 	color:#696461;
 }
 
-.content p {
+.content p,ul {
 	line-height:1.5;
 	font-family: "Onest", sans-serif;
-	font-size: 1rem;
+	font-size: 0.9rem;
 	color:#827d79;
 }
 
@@ -191,7 +191,7 @@
 	list-style:none;
 	position:absolute;
 	left:3vw;
-	bottom:3vh;
+	bottom:-3vh;
 }
 
 .buttons li {
@@ -201,7 +201,7 @@
 
 .buttons span {
 	background-color: #f0e7df;
-	background-image: -webkit-gradient(linear, left top, left bottom, from(#f0e7df), to(#e6dbd1));
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#bab0a8), to(#cfc4ba));
 	position: relative;
 	text-align: center;
 	color: #a7a7a7;
@@ -212,11 +212,12 @@
 	display:flex;
 	align-items:center;
 	justify-content:center;
+	filter:drop-shadow(0 10px 10px rgba(0,0,0,0.4));
 }
 
 .buttons .clicked {
 	text-decoration: none;
-	background-image: -webkit-gradient(linear, left top, left bottom, from(#bab0a8), to(#cfc4ba));
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#f0e7df), to(#e6dbd1));
 	color: #999;
 }
 
@@ -258,6 +259,38 @@
 
 .iglogo{
 	opacity:0;
+}
+
+#postframe {
+	width:80vw;
+	height:80vh;
+	display:none;
+	position:fixed;
+	top:10vh;
+	right:10vw;
+	animation: slideIn-bottom 1s forwards;
+	overflow:hidden;
+	z-index 50;
+}
+
+#blocker {
+	width:100vw;
+	height:100vh;
+	position:fixed;
+	top:0;
+	right:0;
+	background-color:rgba(0,0,0,0.5);
+	display:none;
+}
+
+#xbtn {
+	font-size:3rem;
+	position:fixed;
+	top:11vh;
+	right:11vw;	
+	color:#FFF;
+	animation: slideIn-bottom 1s forwards;
+	display:none;
 }
 
 .post {
@@ -389,6 +422,7 @@ body {
 .form {
 	border-radius:15px;
 	border: 2px solid #696461;
+	position:absolute;
 	width:50vw;
 	height:50vh;
 }
@@ -416,13 +450,13 @@ body {
 }
 
 
-.buttons:not(:has(.clicked:hover)) span:hover{
+.buttons:has(.clicked:hover) span:hover{
 	text-decoration: none;
 	color: #555;
 	background: #f0e7df;
 }
 
-.buttons:has(.clicked:hover) span:hover{
+.buttons:not(:has(.clicked:hover)) span:hover{
 	text-decoration: none;
 	color: #555;
 	background: #ada49c;
@@ -460,6 +494,12 @@ nav:has(.nava:hover) .nava:hover {
 	background-color:rgba(0,0,0,0.3);
 }
 
+#xbtn:hover{
+	cursor:pointer;
+}
+.postblock:hover{
+	cursor:pointer;
+}
 
 
 .nava:nth-child(2) {animation-delay:0.1s;}

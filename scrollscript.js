@@ -42,6 +42,35 @@ for (let i=0; i<snapobj.length; i++) {
 
 const cond = document.getElementById("maincontent");
 
+document.addEventListener("DOMContentLoaded", () => {
+	const hash = window.location.hash;
+	if (hash === "#Links") {
+		content[1].style.transform = `translate(calc(-50%))`;
+		content[0].removeAttribute("id");
+		content[0].style.transform = `translate(calc(-50% - 100vw))`;
+	}
+	if (hash === "#Upcoming") {
+		content[2].style.transform = `translate(calc(-50%))`;
+		content[0].removeAttribute("id");
+		content[0].style.transform = `translate(calc(-50% - 100vw))`;
+	}
+	if (hash === "#FAQ") {
+		content[3].style.transform = `translate(calc(-50%))`;
+		content[0].removeAttribute("id");
+		content[0].style.transform = `translate(calc(-50% - 100vw))`;
+	}
+	if (hash === "#Archives") {
+		content[4].style.transform = `translate(calc(-50%))`;
+		content[0].removeAttribute("id");
+		content[0].style.transform = `translate(calc(-50% - 100vw))`;
+	}
+	if (hash === "#Contact") {
+		content[5].style.transform = `translate(calc(-50%))`;
+		content[0].removeAttribute("id");
+		content[0].style.transform = `translate(calc(-50% - 100vw))`;
+	}
+
+});
 
 document.addEventListener("scroll", () => {
 	content[0].removeAttribute("id");
