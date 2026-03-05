@@ -35,7 +35,7 @@ html body {
 h1 {
         font-family:"Berlinerins", sans-serif;
         font-weight:30;
-        font-size:3.8rem;
+        font-size:8.444vw;
         color:#696461;
 	margin:2vw;
 	margin-bottom:0;
@@ -62,7 +62,7 @@ form {
 textarea {
 	margin:2vw;
 	margin-top:0;
-	height:calc(1.2rem * 6);
+	height:calc(1.2rem * 5);
 	width:calc(100% - 8vw);
 }
 

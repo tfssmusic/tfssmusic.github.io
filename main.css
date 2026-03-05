@@ -177,6 +177,7 @@
 	font-family:"Berlinerins", sans-serif;
 	font-weight:30;
 	font-size:3.8rem;
+	font-size:4.222vw;
 	color:#696461;
 }
 
@@ -291,6 +292,7 @@
 	color:#FFF;
 	animation: slideIn-bottom 1s forwards;
 	display:none;
+	filter:drop-shadow(0 0 3px rgba(0,0,0,0.4));
 }
 
 .post {
@@ -424,7 +426,7 @@ body {
 	border: 2px solid #696461;
 	position:absolute;
 	width:50vw;
-	height:50vh;
+	height:60vh;
 }
 
 
