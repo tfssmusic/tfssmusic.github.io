@@ -1,0 +1,5 @@
+@media only screen and (max-height: 690px) {
+	#notif {
+		display: none;
+	}
+}

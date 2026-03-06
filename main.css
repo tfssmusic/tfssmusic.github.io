@@ -272,6 +272,7 @@
 	animation: slideIn-bottom 1s forwards;
 	overflow:hidden;
 	z-index 50;
+	border:none;
 }
 
 #blocker {
@@ -426,7 +427,7 @@ body {
 	border: 2px solid #696461;
 	position:absolute;
 	width:50vw;
-	height:60vh;
+	height:55vh;
 }
 
 

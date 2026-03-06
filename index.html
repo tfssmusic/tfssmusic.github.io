@@ -15,11 +15,12 @@
 		<link href="main.css" rel="stylesheet">
 		<link href="regscreen.css" rel="stylesheet">
 		<link href="smallscreen.css" rel="stylesheet">
+		<link href="shortscreen.css" rel="stylesheet">
 	</head>
 	<body>
 		<span onclick="restore()" id="xbtn" style="z-index:51;" class="preventselect">×</span>
 		<iframe src="https://tfssmusic.github.io/Page/" id="postframe" style="z-index:50;"></iframe>
-		<div id="blocker" style="z-index:49;"></div>
+		<div onclick="restore()" id="blocker" style="z-index:49;"></div>
 		<div class="defaultnav">
 			<a href="https://tfssmusic.github.io/Page/" style="width:1px;height:1px;right:7px;bottom:7px;position:fixed;z-index:500">
 			</a>
@@ -126,12 +127,14 @@
 									<li><img src="./assets/CBIco.png" style="height:1rem;aspect-ratio:4/5">&emsp;Concert Band</li>
 									<li><img src="./assets/MCIco.png" style="height:1rem;aspect-ratio:2.6/5">&emsp;Music Counci</li>
 								</ul>
+								<div id="notif">
 									
-								<p style="font-size:1rem;position:absolute;font-family:'Gochi Hand', cursive; left:5vw;bottom:3vh;transform:rotate(3deg);">Learn about our activities!</p>
-								<div style="position:absolute;height:1.2vh;width:3.5vw;left:12.5vw;bottom:3vh;transform:rotate(-69deg);">
-									<svg xmlns="http://www.w3.org/2000/svg" viewBox="-133.563 -38.9573 131.4 36.3" width="100%" height="100%">  
-										<path d="M -124 -19 C -126.788 -21.8961 -135 -31 -133.345 -38.417 M -133.345 -38.417 C -133.595 -39.2416 -129 -39 -126.813 -38.5032 C -120.258 -37.2835 -113.982 -35.2793 -109 -29 M -133.345 -38.417 C -107.219 -4.9667 -65.1607 1.163 -41.4382 -4.5444 C -17.7157 -10.2518 -4.7055 -36.764 -2.1608 -38.337" stroke="#827d79" stroke-width="7" fill="none"/> 
-									</svg>
+									<p style="font-size:1rem;position:absolute;font-family:'Gochi Hand', cursive; left:5vw;bottom:3vh;transform:rotate(3deg);">Learn about our activities!</p>
+									<div style="position:absolute;height:1.2vh;width:3.5vw;left:12.5vw;bottom:3vh;transform:rotate(-69deg);">
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="-133.563 -38.9573 131.4 36.3" width="100%" height="100%">  
+											<path d="M -124 -19 C -126.788 -21.8961 -135 -31 -133.345 -38.417 M -133.345 -38.417 C -133.595 -39.2416 -129 -39 -126.813 -38.5032 C -120.258 -37.2835 -113.982 -35.2793 -109 -29 M -133.345 -38.417 C -107.219 -4.9667 -65.1607 1.163 -41.4382 -4.5444 C -17.7157 -10.2518 -4.7055 -36.764 -2.1608 -38.337" stroke="#827d79" stroke-width="7" fill="none"/> 
+										</svg>
+									</div>
 								</div>
 								<div class="dropshadow" style="background: #F0F0F0; position: absolute; width: 20vw; height: 50vh; left: 40vw; bottom: -3vh;"> 
 									<div class="video-container">
@@ -296,6 +299,7 @@
 		<script src="post.js"></script>
 
 		<script>
+			history.scrollRestoration = "manual";
 		</script>
 	</body>
 </html>	
