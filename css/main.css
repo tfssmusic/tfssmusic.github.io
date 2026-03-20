@@ -166,11 +166,11 @@
 }
 
 .content .contentbg {
-	width: 50vw;
+	width: 56vw;
 	height: 52vh;
 	background: #F5EEE7;
 	position:absolute;
-	transform:translateX(-5vw);
+	transform:translateX(-2vw);
 }
 
 .content h1 {

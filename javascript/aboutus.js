@@ -21,11 +21,11 @@ JB.addEventListener("click", function() {
 		GAU.classList.remove("inactive");
 		GAU.classList.add("active");
 		JB.classList.remove("clicked");
-		back.style.transform = `rotate(7deg) translateX(-5vw)`;
+		back.style.transform = `rotate(7deg) translateX(-2vw)`;
 	} else {
 		JBAU.classList.remove("inactive");
 		JBAU.classList.add("active");
-		back.style.transform = `rotate(4deg) translateX(-5vw)`;
+		back.style.transform = `rotate(4deg) translateX(-2vw)`;
 		for (const el of btnlist) {
 			el.classList.remove("clicked");
 			JB.classList.add("clicked");
@@ -42,11 +42,11 @@ CB.addEventListener("click", function() {
 		GAU.classList.remove("inactive");
 		GAU.classList.add("active");
 		CB.classList.remove("clicked");
-		back.style.transform = `rotate(7deg) translateX(-5vw)`;
+		back.style.transform = `rotate(7deg) translateX(-2vw)`;
 	} else {
 		CBAU.classList.remove("inactive");
 		CBAU.classList.add("active");
-		back.style.transform = `rotate(-7deg) translateX(-5vw)`;
+		back.style.transform = `rotate(-7deg) translateX(-2vw)`;
 		for (const el of btnlist) {
 			el.classList.remove("clicked");
 			CB.classList.add("clicked");
@@ -63,11 +63,11 @@ MC.addEventListener("click", function() {
 		GAU.classList.remove("inactive");
 		GAU.classList.add("active");
 		MC.classList.remove("clicked");
-		back.style.transform = `rotate(7deg) translateX(-5vw)`;
+		back.style.transform = `rotate(7deg) translateX(-2vw)`;
 	} else {
 		MCAU.classList.remove("inactive");
 		MCAU.classList.add("active");
-		back.style.transform = `rotate(3deg) translateX(-5vw)`;
+		back.style.transform = `rotate(3deg) translateX(-2vw)`;
 		for (const el of btnlist) {
 			el.classList.remove("clicked");
 			MC.classList.add("clicked");
