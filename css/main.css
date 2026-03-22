@@ -4,7 +4,7 @@
 
 @font-face {
 	font-family: "Berlinerins";
-	src: url("assets/TTBerlinerins.otf") format("opentype"), local("TT Berlinerins Trial");
+	src: url("../assets/fonts/TTBerlinerins.otf") format("opentype"), local("TT Berlinerins Trial");
 }
 
 .preventselect {
