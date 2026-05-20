@@ -6,9 +6,80 @@
 	.mobilenav{
 		display: block;
 	}
-	
-	html{
-		overflow:hidden;
+
+	body {
+		height:400vh;
 	}
+
+	.content{
+		position: relative;
+		height:100vh;
+		display: block;
+	}
+
+	.content .contentbg{
+		width:75vw;
+		left: 14vw;
+	}
+
+	.content h1 {
+		font-size:4vh;
+	}
+
+	.content p {
+		font-size:1.46vh;
+	}
+
+	.content .link {
+		height:5vh;
+		position: relative;	
+	}
+
+	.link a {
+		left:11vw;
+		font-size:2.5vh;
+	}
+
+	.buttons {
+		width:50vw;
+		top:50vh;
+		left:10vw;
+	}
+
+	.buttons span{
+		width:4vh;
+		height:4vh;
+	
+	}
+
+	.igembed {
+		width:70vw;
+		height:50vh;
+	}
+
+	#postframe {
+		width:90vw;
+		height:90vh;
+	}
+
+	#xbtn {
+		font-size:2rem;
+	}
+
+	.form {
+		width:80vw;
+		height:50vh;
+	}
+	
 }
 
+.mobilebg {
+	position:fixed;
+	background-image:url("../assets/mobsbg.webp");
+	background-repeat: no-repeat;
+	background-position-x: center;
+	background-position-y: top;
+	background-size: cover;
+	height:100vh;
+	width:100vw;
+}
